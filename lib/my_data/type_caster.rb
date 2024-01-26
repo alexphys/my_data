@@ -43,7 +43,7 @@ module MyData
     end
 
     def type_cast_time(value)
-      value.present? ? value.to_time : nil
+      value.present? ? value.strftime('%H:%M:%S.0') : nil
     end
 
     def type_cast_boolean(value)
